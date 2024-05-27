@@ -7,12 +7,8 @@ This project implements an SMS spam classifier using machine learning techniques
 - [Introduction](#introduction)
 - [Dataset](#dataset)
 - [Dependencies](#dependencies)
-- [Usage](#usage)
 - [Model Training and Evaluation](#model-training-and-evaluation)
 - [Results](#results)
-- [License](#license)
-- [Contributing](#contributing)
-- [Contact](#contact)
 
 ## Introduction
 
@@ -32,7 +28,18 @@ To run the code in this repository, you will need the following Python libraries
 - `numpy`
 - `scikit-learn`
 
-You can install these dependencies using `pip`:
+You can install these dependencies using `pip`: pip install nltk pandas numpy scikit-learn
 
-```bash
-pip install nltk pandas numpy scikit-learn
+## Model Training and Evaluation
+
+The script performs the following steps:
+
+- Text Preprocessing: Cleans the text by removing non-alphabet characters, converting to lowercase, lemmatizing, and removing stop words.
+- Feature Extraction: Uses TfidfVectorizer to transform the processed text into TF-IDF features.
+- Model Training: Trains a Naive Bayes classifier (MultinomialNB) on the training data.
+- Evaluation: Evaluates the model using a confusion matrix and accuracy score.
+
+
+## Results
+
+After running the script, you will see the accuracy score and confusion matrix printed in the console, indicating the performance of the spam classifier on the dataset.
