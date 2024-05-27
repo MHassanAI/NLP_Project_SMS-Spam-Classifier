@@ -1,4 +1,5 @@
 SMS Spam Classifier
+
 This project implements an SMS spam classifier using machine learning techniques. The classifier is built using Python and various libraries such as nltk, pandas, scikit-learn, and more.
 
 Table of Contents:
